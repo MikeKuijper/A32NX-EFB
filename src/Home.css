@@ -1,0 +1,249 @@
+body, html {
+  padding: 0px;
+  margin: 0px;
+  overflow: hidden;
+}
+
+.Home {
+  text-align: center;
+  overflow: hidden;
+  user-select: none;
+}
+
+.span-left {
+  text-align: left;
+}
+
+.span-right {
+  text-align: right;
+}
+
+.span-center {
+  text-align: center;
+}
+
+.header-column {
+  float: left;
+  width: 33.33%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 20vw 20vw 20vw 20vw 20vw;
+  grid-template-rows: 20vh 20vh 20vh 20vh 20vh;
+  vertical-align: top;
+  margin: 0px;
+  /* padding: 10px; */
+  width: 100vw;
+  height: 80vh;
+}
+
+.app-icon {
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  padding-bottom: 0px;
+  filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.5));
+  height: fit-content;
+  max-width: 18vw;
+}
+
+.app-icon:active {
+  transform: translateY(4px);
+  filter: drop-shadow(4px 2px 10px rgba(0, 0, 0, 0.5));
+}
+
+.app-icon-img {
+  height: 8vw;
+  margin-bottom: 0px;
+}
+
+.app-icon-name {
+  font-size: 2.5vw;
+  margin-top: -1vw;
+  margin-bottom: 0px;
+  filter: drop-shadow(4px 2px 6px rgba(0, 0, 0, 0.6));
+  word-break: break-word;
+  text-decoration: none;
+  color: white;
+}
+
+.header {
+  position: relative;
+  user-select: none;
+  background-color: rgb(23, 23, 23);
+  height: 3vh;
+  display: flex;
+  flex-direction: column;
+  align-items: right;
+  justify-content: center;
+  /* font-size: calc(10px + 2vmin); */
+  color: white;
+  font-size: 2vh;
+  z-index: 999;
+}
+
+.header-text {
+  /* color: #3388b3; */
+  color: white;
+  /* font-weight: bold; */
+  display: inline-block;
+  margin-right: 1vw;
+  margin-left: 1vw;
+  /* margin-left: 1vw; */
+}
+
+.header-icon {
+  width: 2.5vh;
+  height: 2.5vh;
+  margin-right: 5px;
+}
+
+.footer-icon {
+  /* width: 4.5vh; */
+  height: 4.5vh;
+  margin-right: 5px;
+  margin-left: 5px;
+  margin-bottom: 0px;
+  margin-top: 6px;
+}
+
+.outer {
+  /* background-color: #ffffff; */
+  background-image: url("assets/wallpaper.png");
+  background-size: cover;
+  background-position: center;
+  height: 97vh;
+}
+
+.fullscreen {
+  height: 100%;
+  width: 100%;
+}
+
+.full-height {
+  height: 100%;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.app-content {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: #000000;
+  height: 91vh;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  height: 91vh;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0px;
+  width: 100vw;
+  user-select: none;
+  background-color: #000000;
+  opacity: 60%;
+  height: 6vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  z-index: 999;
+}
+
+a {
+  text-align: center;
+}
+
+
+.gallery-cell {
+  width: 100%;
+  height: 100%;
+  /* height: 200px; */
+  margin-right: 10px;
+  /* background: #8C8; */
+  /* counter-increment: gallery-cell; */
+}
+
+/* cell number */
+.gallery-cell:before {
+  display: block;
+  text-align: center;
+  /* content: counter(gallery-cell); */
+  /* line-height: 200px; */
+  /* font-size: 80px; */
+  /* color: white; */
+}
+
+
+/* big buttons, no circle */
+.flickity-prev-next-button {
+  width: 32px;
+  height: 32px;
+  background: transparent;
+  opacity: 60%;
+}
+/* arrow color */
+.flickity-prev-next-button .arrow {
+  fill: white;
+}
+.flickity-prev-next-button.no-svg {
+  color: white;
+}
+.flickity-prev-next-button:hover {
+  background: transparent;
+}
+/* hide disabled button */
+.flickity-prev-next-button:disabled {
+  display: none;
+}
+
+/* position dots in gallery */
+.flickity-page-dots {
+  bottom: 12px;
+  /* margin-right: 4px; */
+  /* margin-left: 4px; */
+}
+/* white circles */
+.flickity-page-dots .dot {
+  width: 8px;
+  height: 8px;
+  opacity: 1;
+  background: transparent;
+  border: 2px solid white;
+}
+/* fill-in selected dot */
+.flickity-page-dots .dot.is-selected {
+  background: white;
+}
+
+.no-margin {
+  margin: 0px;
+}
+
+.no-padding {
+  padding: 0px;
+}

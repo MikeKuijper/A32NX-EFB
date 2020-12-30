@@ -1,0 +1,10 @@
+{
+    "name": "Settings",
+    "id": "settings",
+    "author": "Mike Kuijper",
+    "version": "v1.0.0",
+    "logo": "logo.png",
+    "size": 0,
+    "paths": [],
+    "parameters": "/:page?"
+}

@@ -1,0 +1,210 @@
+.settings-app-header {
+    background-color: #2b2b2b;
+    text-align: left;
+    height: 12vh;
+    display: table-cell;
+    vertical-align: middle;
+    color: #ffffff;
+    user-select: none;
+}
+
+.settings-title {
+    font-size: 4.5vh;
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-top: 1vh;
+    margin-bottom: 0px;
+    /* position: relative; */
+    /* bottom: 50%; */
+}
+
+.settings-content {
+    background-color: rgb(23, 23, 23);
+    opacity: 100%;
+}
+
+.settings-vertical-menu {
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    margin-left: 2vh;
+    margin-right: 2vh;
+
+    width: 26vw;
+    height: 80vh;
+    /* display: block; */
+    overflow-y: auto;
+    padding: 2vh;
+    /* padding-bottom: 0px; */
+    /* padding: 12px; */
+    background-color: rgb(43, 43, 43);
+    height: fit-content;
+    max-height: 76vh;
+}
+
+.settings-vertical-menu a {
+    color: #ffffff;
+    display: block;
+    /* margin-bottom: 2vh; */
+    padding: 6px;
+    text-decoration: none;
+    text-align: left;
+}
+
+.settings-menu {
+    margin-top: 2vh;
+    margin-left: 2vh;
+    width: 30vw;
+    height: 80vh;
+    overflow-y: auto;
+}
+
+.settings-menu a {
+    background-color: rgb(43, 43, 43);
+    color: #ffffff;
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+    text-align: left;
+}
+
+.settings {
+    margin-top: 2vh;
+    margin-right: 2vh;
+    margin-left: 3vh;
+    /* margin-bottom: 2vh; */
+    /* width: 30vw; */
+    height: 80vh;
+    overflow-y: auto;
+    text-align: right;
+}
+
+.settings a {
+    background-color: rgb(43, 43, 43);
+    color: #ffffff;
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+    text-align: right;
+    margin: 0px;
+}
+
+.settings-property-column-left {
+    float: left;
+    width: 50%;
+    text-align: left;
+}
+
+.settings-property-column-left a {
+    text-align: left;
+}
+
+.settings-property-column-right {
+    float: right;
+    width: 50%;
+    text-align: right;
+}
+
+.settings-property-column-right a {
+    text-align: right;
+}
+
+
+.settings-vertical-menu a.active {
+    background-color: rgb(32, 32, 32);
+}
+
+.settings-column-right {
+    float: right;
+    width: 70%;
+    text-align: right;
+}
+
+.settings-column-left {
+    float: left;
+    width: 30%;
+}
+
+.settings-description-text {
+    background-color: rgb(43, 43, 43);
+    color: #ffffff;
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+    text-align: right;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: left;
+    user-select: none;
+}
+
+.settings-container {
+    background-color: rgb(43, 43, 43);
+    color: #ffffff;
+    display: block;
+    padding: 9px;
+    text-decoration: none;
+    text-align: right;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: left;
+    user-select: none;
+}
+
+.settings-input {
+    width: 29vw;
+    padding: 9px;
+    /* width: 80vw; */
+    text-align: right;
+
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    /* border-width: 1px; */
+    /* border-color: #CCCCCC; */
+    background-color: rgb(23, 23, 23);
+    color: #FFFFFF;
+    /* border-style: solid; */
+    /* border-radius: 1px; */
+    /* margin-top: 4px; */
+    /* margin-bottom: 4px; */
+    opacity: 40%;
+}
+
+.settings-checkbox {
+    width: 29vw;
+    /* padding: 16px; */
+    background-color: rgb(23, 23, 23);
+    color: #FFFFFF;
+    opacity: 40%;
+    margin-bottom: 12px;
+}
+
+.settings-button {
+    width: 29vw;
+    padding: 9px;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    background-color: rgb(23, 23, 23);
+    color: #FFFFFF;
+    opacity: 40%;
+    width: 100%;
+    text-align: center;
+}
+
+.settings-button:active {
+    background-color: rgb(23, 23, 23);
+    opacity: 60%;
+}
+
+.settings-text {
+    background-color: rgb(43, 43, 43);
+    color: #ffffff;
+    display: block;
+    padding: 3px;
+    padding-right: 6px;
+    text-decoration: none;
+    text-align: right;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}

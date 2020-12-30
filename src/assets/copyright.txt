@@ -1,0 +1,5 @@
+home.svg https://www.freeicons.io/building-icons/home-line-icon-19701
+wifi-2.svg https://commons.wikimedia.org/wiki/File:Ic_network_wifi_48px.svg
+battery.svg custom made after android icon
+wallpaper.png custom made
+wallpaper-grey.png custom made

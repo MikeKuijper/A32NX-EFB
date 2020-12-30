@@ -1,0 +1,41 @@
+.arachne-input {
+    padding: 5px;
+    width: 80vw;
+
+    margin-left: 10vw;
+    margin-right: 10vw;
+
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    /* border-width: 1px; */
+    /* border-color: #CCCCCC; */
+    background-color: rgb(23, 23, 23);
+    color: #FFFFFF;
+    /* border-style: solid; */
+    /* border-radius: 1px; */
+    margin-top: 2px;
+    margin-bottom: 6px;
+    opacity: 40%;
+}
+
+.arachne-input::placeholder {
+    opacity: 100%;
+}
+
+.arachne-app-header {
+    padding-left: 10vw;
+    padding-right: 10vw;
+    background-color: rgb(34,34, 34);
+    color: #ffffff;
+}
+
+.arachne-viewport {
+    background-color: #ffffff;
+}
+
+.arachne-pagenotfound {
+    background-color: rgb(189, 58, 58);
+    text-align: center;
+    color: white;
+}

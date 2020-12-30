@@ -1,0 +1,16 @@
+{
+    "name": "Arachne",
+    "id": "arachne",
+    "author": "Mike Kuijper",
+    "version": "v1.2.0",
+    "logo": "logo.png",
+    "size": 0,
+    "paths": [],
+    "settings": [
+        {
+            "type": "text",
+            "name": "Home page",
+            "value": "http://flybywiresim.com"
+        }
+    ]
+}

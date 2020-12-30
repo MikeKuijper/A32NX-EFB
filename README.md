@@ -5,6 +5,6 @@ This is an attempt to create a platform for other developers to create 'modules'
 ## Screenshots
 ![screenshot1](media/home.png){.screenshot1}
 ![screenshot2](media/arachne.png){.screenshot2}
-![screenshot3](media/general settings.png){.screenshot3}
+![screenshot3](media/general_settings.png){.screenshot3}
 ![screenshot4](media/about.png){.screenshot4}
-![screenshot5](media/arachne settings.png)
+![screenshot5](media/arachne_settings.png)

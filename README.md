@@ -4,6 +4,7 @@ This is an attempt to create a platform for other developers to create 'modules'
 
 Current features:
 * Module system for making apps
+* Very basic web browser
 * Settings parser for a centralised settings app
 * Backbones of a tablet, such as header with accurate time and navigation
 

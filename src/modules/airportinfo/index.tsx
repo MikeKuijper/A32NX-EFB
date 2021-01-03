@@ -3,21 +3,7 @@ import "./style.css";
 //import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 export class App extends React.Component {
-    path: String = "/arachne";
-    url: any = "https://flybywiresim.com";
-
-    handleSubmit(event: any) {
-        event.preventDefault();
-        var url = event.target.url.value;
-        url = (url.startsWith("https://")) ? url : "https://" + url;
-        // this.url = url;
-        console.log(url);
-        var viewport = document.getElementById("viewport");
-        viewport?.setAttribute("data", url);
-    }
-
     render() {
-        var url = this.url;
         return (
             <div className="app-content" >
                 Airport Information

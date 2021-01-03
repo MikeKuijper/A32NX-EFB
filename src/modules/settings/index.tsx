@@ -1,9 +1,8 @@
 import * as React from 'react';
-import { BrowserRouter as Router, Route, Link, RouteProps, RouteComponentProps } from "react-router-dom";
+import { BrowserRouter as Router, Link, RouteComponentProps } from "react-router-dom";
 import "./style.css";
 
 import settingsConfig from "../../index";
-
 
 interface propertyProps {
     "id"?: string,
@@ -20,10 +19,8 @@ interface menuEntryProps {
     "url"?: string
 }
 
-// let globalPage: string;
-// let globalPreviousPage: string;
-
 export const Property: React.FC<propertyProps> = ({id, name, type, value, onChange, onClick}) => {
+    Router.bind(this); // fixes @typescript-eslint/no-unused-vars
     if (type) {
         switch (type) {
             default:
@@ -38,7 +35,6 @@ export const Property: React.FC<propertyProps> = ({id, name, type, value, onChan
                             </div>
                         </div>
                     </div>);
-                    break;
             case "button-full-width":
                 return (<div className="row">
                         <div className="full-width">
@@ -47,7 +43,6 @@ export const Property: React.FC<propertyProps> = ({id, name, type, value, onChan
                             </div>
                         </div>
                     </div>);
-                break;
             case "information":
                 return (<div className="row">
                             <div className="settings-property-column-left">
@@ -59,7 +54,6 @@ export const Property: React.FC<propertyProps> = ({id, name, type, value, onChan
                                 </div>
                             </div>
                         </div>);
-                break;
             case "boolean":
                 return (<div className="row">
                             <div className="settings-property-column-left">
@@ -71,7 +65,6 @@ export const Property: React.FC<propertyProps> = ({id, name, type, value, onChan
                                 </div>
                             </div>
                         </div>);
-                    break;
         }
     } else {
         return (
@@ -80,7 +73,7 @@ export const Property: React.FC<propertyProps> = ({id, name, type, value, onChan
                     <p className="settings-description-text">{name}</p>
                 </div>
                 <div className="settings-property-column-right">
-                    <a href="#">{value}</a>
+                    <a href="#outer">{value}</a>
                 </div>
             </div>
         );
@@ -89,7 +82,7 @@ export const Property: React.FC<propertyProps> = ({id, name, type, value, onChan
 
 export const MenuEntry: React.FC<menuEntryProps> = ({name, isActive, url}) => {
     return (
-        <Link to={(url) ? url : "#"}><a href="#" className={(isActive) ? "active" : ""}>{name}</a></Link>
+        <Link to={(url) ? url : "#"}><a href="#outer" className={(isActive) ? "active" : ""}>{name}</a></Link>
     );
 }
 
@@ -116,7 +109,7 @@ export class SettingsForm extends React.Component<settingsFormProps, settingsFor
     }
 
     public handleChange = (e: any) : void => {
-        if(e.target.type == "checkbox") settingsConfig.categories[globalPageID].settings[e.target.id].value = e.target.checked;
+        if(e.target.type === "checkbox") settingsConfig.categories[globalPageID].settings[e.target.id].value = e.target.checked;
         else settingsConfig.categories[globalPageID].settings[e.target.id].value = e.target.value;
         this.setState({});
     }
@@ -138,6 +131,7 @@ export class SettingsForm extends React.Component<settingsFormProps, settingsFor
     }
 }
 
+
 interface appProps extends RouteComponentProps {
     
 }
@@ -145,7 +139,6 @@ interface appProps extends RouteComponentProps {
 interface appState {
 
 }
-
 
 let globalPageID: number;
 export class App extends React.Component<appProps, appState> {
@@ -156,7 +149,7 @@ export class App extends React.Component<appProps, appState> {
 
         let menuEntries = [];
         for (let i in settingsConfig.categories) {
-            let menuEntry = <MenuEntry name={settingsConfig.categories[i].name} url={`/settings/${settingsConfig.categories[i].id}`} isActive={settingsConfig.categories[i].id == page}></MenuEntry>;
+            let menuEntry = <MenuEntry name={settingsConfig.categories[i].name} url={`/settings/${settingsConfig.categories[i].id}`} isActive={settingsConfig.categories[i].id === page}></MenuEntry>;
             menuEntries.push(menuEntry);
         }
 

@@ -1,13 +1,9 @@
 import React from 'react'
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import './Home.css';
-import BatteryIcon from './assets/battery.svg'
-import WifiIcon from './assets/wifi-2.svg'
 import HomeIcon from './assets/home.svg'
-import BackIcon from './assets/back.svg'
 import { AppIcon } from './AppIcon'
 import modules from "./modules/modules.js";
-import { forEachLeadingCommentRange } from 'typescript';
 
 export const Header: React.FC = () => {
 var date = new Date();

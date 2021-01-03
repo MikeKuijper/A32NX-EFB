@@ -1,0 +1,16 @@
+{
+    "name": "Module Template",
+    "id": "template",
+    "author": "AUTHOR",
+    "version": "v1.1.0",
+    "logo": "logo.png",
+    "size": 0,
+    "paths": [],
+    "settings": [
+        {
+            "type": "information",
+            "name": "Version",
+            "value": "v1.0.0"
+        }
+    ]
+}

@@ -1,6 +1,6 @@
 import React from 'react';
 // import { Image } from 'react-native';
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import './Home.css';  
 //const fs = require("fs");
 // const Logo = require('./assets/logo.png');
